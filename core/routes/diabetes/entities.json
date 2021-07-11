@@ -1,0 +1,257 @@
+{
+    "start": {
+        "id": "start",
+        "msg": [
+            "Let us ask you some questions to get to know some recent changes in your body. This typically takes less than minutes.",
+            "To go to the previous question, you can write \"previous\"",
+            "What is your current age?"
+        ],
+        "previous": "start",
+        "next": "1",
+        "type": "num",
+        "prep": null,
+        "postp": null
+    },
+    "1": {
+        "id": "1",
+        "msg": [
+            "Biological sex and hormones impact how our bodies metabolize food. Which sex best describes you?"
+        ],
+        "options": [
+            "Male",
+            "Female",
+            "Prefer not to say"
+        ],
+        "previous": "0",
+        "next": "2",
+        "type": "options-1",
+        "prep": null,
+        "postp": "sex"
+    },
+    "2": {
+        "id": "2",
+        "msg": [
+            "Do you feel recently you have been urinating more than usual?",
+            "Answer yes only if your symptom is persisting for the past few days, not just today."
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "1",
+        "next": "3",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "3": {
+        "id": "3",
+        "msg": [
+            "In complement to the previous question, are you feeling excessively thirsty lately?"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "2",
+        "next": "4",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "4": {
+        "id": "4",
+        "msg": [
+            "Did you suddenly lose weight recently?"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "3",
+        "next": "5",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "5": {
+        "id": "5",
+        "msg": [
+            "Are you feeling weak recently?"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "4",
+        "next": "6",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "6": {
+        "id": "6",
+        "msg": [
+            "Are you suffering from excessive hunger?",
+            "Alternatively, has your appetite increased lately?"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "5",
+        "next": "7",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "7": {
+        "id": "7",
+        "msg": [
+            "Are you suffering from genital thrush?",
+            "It is a type of yeast infection that forms whitish and often painful layers on the skin."
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "6",
+        "next": "8",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "8": {
+        "id": "8",
+        "msg": [
+            "Are you suffering from blurred vision ocassionally?"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "7",
+        "next": "9",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "9": {
+        "id": "9",
+        "msg": [
+            "Are you feeling itchy recently?",
+            "This can happen throughout the body"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "8",
+        "next": "10",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "10": {
+        "id": "10",
+        "msg": [
+            "Are you irritable lately?",
+            "This is not a high priority metric, still it is important in our analysis"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "9",
+        "next": "11",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "11": {
+        "id": "11",
+        "msg": [
+            "Are you suffering delayed healing?",
+            "This is when small injuries take a long time to heal."
+        ],
+        "previous": "10",
+        "next": "12",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "12": {
+        "id": "12",
+        "msg": [
+            "Are you suffering from partial paresis?",
+            "Paresis involves the weakening of a muscle or group of muscles."
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "11",
+        "next": "13",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "13": {
+        "id": "13",
+        "msg": [
+            "Have you recently felt certain muscles being stiff?"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "12",
+        "next": "14",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "14": {
+        "id": "14",
+        "msg": [
+            "Are you suffering from alopecia?",
+            "Alopecia areata is a condition that causes hair to fall out in small patches, which can be unnoticeable.",
+            "These patches may connect, however, and then become noticeable."
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "13",
+        "next": "15",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "15": {
+        "id": "15",
+        "msg": [
+            "Do you suffer from obesity?"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "14",
+        "next": "report",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "report": {
+        "id": "report",
+        "msg": [
+            "Here is what we found."
+        ],
+        "previous": "15",
+        "next": null,
+        "type": null,
+        "prep": "reporting",
+        "postp": null
+    }
+}
