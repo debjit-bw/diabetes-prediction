@@ -31,30 +31,33 @@ class diabetes(predictives):
         ans_list = [user_doc["answers"][chat_doc["id"]]["start"]]
         for i in range(1, 16):
             ans_list.append(user_doc["answers"][chat_doc["id"]][str(i)])
-        result = self.ai.predict(ans_list)[1]
 
+        chance = self.ai.predict(ans_list)
         msg = []
-        chance = int((result - 0.3)/(1.0 - 0.3)*100)
-        if chance < 0:
-            chance = 0
 
-        if chance < 50:
-            msg.append("You have an extremely low likelihood for diabetes.")
+        if chance < 15:
+            msg.append("You have a low likelihood for diabetes.")
+            msg.append(f"You have a {chance}% chance for it.")
             msg.append("Eat and stay healthy.")
-        elif chance < 70:
-            msg.append("You have a low chance of diabetes.")
-            msg.append("Eat and stay healthy.")
-        elif chance < 80:
+        elif chance < 30:
+            msg.append("You have a low to moderate chance of diabetes.")
+            msg.append(f"You have a {chance}% chance for it.")
+            msg.append("We would recommend you to go see a doctor if you feel like it.")
+        elif chance < 50:
             msg.append("You have a moderate chance of diabetes.")
+            msg.append(f"You have a {chance}% chance for it.")
             msg.append("We would recommend getting checked up.")
-        elif chance < 90:
+        elif chance < 70:
             msg.append("You have a moderate to high chance of diabetes.")
-            msg.append("We would recommend consulting a doctor.")
-        elif chance < 95:
+            msg.append(f"You have a {chance}% chance for it.")
+            msg.append("We would recommend you to consult a doctor without delay.")
+        elif chance < 90:
             msg.append("You have a high chance of diabetes.")
+            msg.append(f"You have a {chance}% chance for it.")
             msg.append("We would recommend immediate medical attention.")
         else:
             msg.append("You have a very high chance of diabetes.")
+            msg.append(f"You have a {chance}% chance for it.")
             msg.append("We would recommend immediately getting checked up.")
         
         msg.append("Our's is not medical advice. It is a predictive model.")
