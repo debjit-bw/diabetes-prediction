@@ -1,0 +1,4 @@
+flask-firebase-admin
+firebase_admin
+Flask==1.1.2
+# uwsgi
