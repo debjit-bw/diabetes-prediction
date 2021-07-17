@@ -2,7 +2,7 @@
     "start": {
         "id": "start",
         "msg": [
-            "Let us ask you some questions to get to know some recent changes in your body. This typically takes less than minutes.",
+            "Let us ask you some questions to get to know some recent changes in your body. This typically takes less than 5 minutes.",
             "To go to the previous question, you can write \"previous\"",
             "What is your current age?"
         ],
