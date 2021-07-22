@@ -1,0 +1,177 @@
+{
+    "start": {
+        "id": "start",
+        "msg": [
+            "Let us ask you some questions to get to know your body. This typically takes less than 5 minutes.",
+            "To go to the previous question, you can write \"previous\"",
+            "Do you have an enlarged thyroid gland?",
+            "This usually appears as a swelling at the base of your neck."
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "start",
+        "next": "1",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "1": {
+        "id": "1",
+        "msg": [
+            "Are you suffering from fatigue, muscle weakness or excessive sleepiness?"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "0",
+        "next": "2",
+        "type": "options-1",
+        "prep": null,
+        "postp": "y/n"
+    },
+    "2": {
+        "id": "2",
+        "msg": [
+            "Which of the following do you relate to more?"
+        ],
+        "options": [
+            "Increased sensitivity to cold",
+            "Increased sensitivity to heat",
+            "None"
+        ],
+        "previous": "1",
+        "next": "3",
+        "type": "options-1",
+        "prep": null,
+        "postp": "s_ops"
+    },
+    "3": {
+        "id": "3",
+        "msg": [
+            "Which of the following symptoms sounds more relatable to you?"
+        ],
+        "options": [
+            "Frequent bowels",
+            "Constipation",
+            "None"
+        ],
+        "previous": "2",
+        "next": "4",
+        "type": "options-1",
+        "prep": null,
+        "postp": "s_ops"
+    },
+    "4": {
+        "id": "4",
+        "msg": [
+            "Which of the following are you suffering from?"
+        ],
+        "options": [
+            "Unintentional weight loss",
+            "Weight Gain",
+            "None"
+        ],
+        "previous": "3",
+        "next": "5",
+        "type": "options-1",
+        "prep": null,
+        "postp": "s_ops"
+    },
+    "5": {
+        "id": "5",
+        "msg": [
+            "Which of the following do you feel more?"
+        ],
+        "options": [
+            "Rapid, irregular heartbeat & pounding of your heart",
+            "Slowed heart rate",
+            "None"
+        ],
+        "previous": "4",
+        "next": "hyper",
+        "type": "options-1",
+        "prep": null,
+        "postp": "s_ops"
+    },
+    "6": {
+        "id": "6",
+        "msg": [
+            "Choose one, which feels more accurate to you:"
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "previous": "5",
+        "next": "7",
+        "type": "options-1",
+        "prep": null,
+        "postp": "s_ops"
+    },
+    "hyper": {
+        "id": "hyper",
+        "msg": [
+            "Here are a list of symptoms, check all that apply to your case:"
+        ],
+        "options": [
+            "Increased appetite",
+            "Tremor, usually a fine trembling in your hands and fingers",
+            "Sweating",
+            "Nervousness, anxiety and irritability",
+            "Difficulty sleeping",
+            "Skin thinning",
+            "Fine, brittle hair",
+            "Dry, red or swollen eyes",
+            "Excessive tearing or discomfort in one or both eyes",
+            "Light sensitivity",
+            "Blurry or double vision, inflammation, or reduced eye movement",
+            "Protruding eyeballs",
+            "None"
+        ],
+        "previous": "c_hyper",
+        "next": "hypo",
+        "type": "options",
+        "prep": null,
+        "postp": "hyper"
+    },
+    "hypo": {
+        "id": "hypo",
+        "msg": [
+            "Here are a list of symptoms, check all that apply to your case:"
+        ],
+        "options": [
+            "Dry skin",
+            "Puffy face",
+            "Muscle weakness",
+            "Elevated blood cholesterol level",
+            "Muscle aches, tenderness and stiffness",
+            "Pain, stiffness or swelling in your joints",
+            "Thinning hair",
+            "Depression",
+            "Yellowing of the skin and whites of the eyes (jaundice)",
+            "A large, protruding tongue.",
+            "Difficulty breathing.",
+            "Poor muscle tone",
+            "None"
+        ],
+        "previous": "hyper",
+        "next": "report",
+        "type": "options",
+        "prep": null,
+        "postp": "hypo"
+    },
+    "report": {
+        "id": "report",
+        "msg": [
+            "Here is what we found."
+        ],
+        "previous": "hypo",
+        "next": null,
+        "type": null,
+        "prep": "reporting",
+        "postp": null
+    }
+}
